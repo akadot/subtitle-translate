@@ -1,0 +1,11 @@
+{
+  "name": "sub-translate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "GhostDot_ <muriloholiveira@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "uuid": "^8.3.2"
+  }
+}

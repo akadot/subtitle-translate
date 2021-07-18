@@ -1,12 +1,13 @@
 const axios = require("axios").default;
 const { v4: uuidv4 } = require("uuid");
+require("dotenv").config();
 
-var subscriptionKey = "b919b9a51c6a4d62b2b9ab578dae9b76";
+var subscriptionKey = process.env.SECRET_KEY;
 var endpoint = "https://api.cognitive.microsofttranslator.com";
 
 // Add your location, also known as region. The default is global.
 // This is required if using a Cognitive Services resource.
-var location = "global";
+var location = process.env.LOCATION;
 
 axios({
   baseURL: endpoint,
